@@ -1,29 +1,33 @@
 
 /* General */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    color: #000000;
+    color: black;
+    overflow-x: hidden;
 }
 
 section {
-    padding: 50px;
+    min-height: 100vh;
+    padding: 70px 8%;
 }
 
 h2 {
-    margin-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 30px;
     text-decoration: underline;
-    font-style:italic;
+    font-style: italic;
 }
 
 
-
 /* Navigation */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -38,69 +42,90 @@ nav h2 {
 }
 
 nav a {
-    color:black;
+    color: black;
     text-decoration: none;
     margin: 10px;
+    font-size: 18px;
 }
 
 nav a:hover {
     color: red;
 }
 
-/* Home */
+
+/* Home  */
+
 #home {
     background-color: #fff0f0;
+    min-height: calc(100vh - 88px);
+
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 100px;
+
+    padding: 60px 12%;
 }
 
 #home div {
-    max-width: 550px;
+    max-width: 650px;
 }
 
 #home h1 {
-    font-size: 35px;
+    font-size: 45px;
+    margin-bottom: 10px;
 }
 
 #home h2 {
     color: red;
+    font-size: 32px;
+    margin-bottom: 25px;
 }
 
+#home p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
 
 #home img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
 
 .button {
+    display: inline-block;
     background-color: red;
     color: white;
-    padding: 12px 25px;
+    padding: 15px 30px;
     border-radius: 25px;
     text-decoration: none;
+    font-size: 18px;
 }
 
-.button:hover{
+.button:hover {
     background-color: darkred;
 }
 
-/* About */
+
+/* About  */
+
 #about {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 .about-image {
     width: 35%;
+    display: flex;
+    justify-content: center;
 }
 
 .about-image img {
-    width: 200px;
+    width: 220px;
 }
 
 .about-text {
@@ -108,95 +133,151 @@ nav a:hover {
     text-align: right;
 }
 
+.about-text p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+
 /* Skills */
+
 #skills {
     background-color: #fff0f0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills h2 {
+    text-align: center;
 }
 
 .skills {
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
 }
 
 .skills div {
     background-color: white;
-    padding: 25px;
+    padding: 30px;
     width: 30%;
     text-align: center;
     border-radius: 10px;
+    font-size: 20px;
 }
 
 .skills div:hover {
     background-color: #ffdada;
 }
 
-#skills h2{
+
+/* Project  */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects h2 {
     text-align: center;
 }
 
-/* Projects */
 .projects {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
 }
 
 .project {
     width: 50%;
-    padding: 20px;
+    padding: 25px;
     border: 1px solid #ddd;
     border-radius: 10px;
-}
-
-.Projecth2{
-    text-align: center;
 }
 
 .picture {
     background-color: #ffe0e0;
     color: darkred;
-    padding: 50px;
+    padding: 55px;
     text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.project h3 {
+    font-size: 24px;
     margin-bottom: 15px;
 }
 
 .project p {
     margin: 15px 0;
     color: #555;
+    font-size: 19px;
+    line-height: 1.6;
 }
 
 
-/* Contact */
+/* Contact  */
+
 #contact {
     background-color: #fff0f0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact h2 {
+    font-size: 34px;
+}
+
+#contact p {
+    font-size: 19px;
+    line-height: 1.6;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    max-width: 600px;
-    margin: 20px auto;
+    gap: 15px;
+    width: 65%;
+    max-width: 800px;
+    margin: 25px auto;
 }
 
 input, textarea {
-    padding: 12px;
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 17px;
     font-family: Arial;
 }
 
 button {
     background-color: red;
     color: white;
-    padding: 12px;
+    padding: 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
 }
 
-/* Footer */
+button:hover {
+    background-color: darkred;
+}
+
+
+/* Footer  */
+
 footer {
     background-color: #222;
     color: white;
@@ -210,37 +291,95 @@ footer a {
     margin: 10px;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
 
-    nav, #home, .projects, footer {
+/* Mobile  */
+
+@media (max-width: 768px) {
+
+    nav {
         flex-direction: column;
+        gap: 15px;
+    }
+
+    #home {
+        flex-direction: column-reverse;
         text-align: center;
-        gap: 20px;
+        gap: 35px;
+        padding: 50px 6%;
     }
 
-    nav a {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    section {
-        padding: 35px 5%;
+    #home h1 {
+        font-size: 35px;
     }
 
     #home img {
-        width: 150px;
-        height: 150px;
+        width: 190px;
+        height: 190px;
     }
 
-    .skills div, .project {
-        width: 100%;
-    }
     #about {
         flex-direction: column;
+        text-align: center;
+        gap: 35px;
     }
 
     .about-image, .about-text {
         width: 100%;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .skills div {
+        width: 45%;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+
+/* SMALL MOBILE SCREENS */
+
+@media (max-width: 480px) {
+
+    section {
+        padding: 50px 6%;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+    #home h2 {
+        font-size: 26px;
+    }
+
+    #home p {
+        font-size: 17px;
+    }
+
+    .skills div {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 28px;
     }
 }
